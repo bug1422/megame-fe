@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'UndertaleFont';
+    src: url('../fonts/PixelOperator8.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UndertaleBoldFont';
+    src: url('../fonts/PixelOperator8-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.undertale {
+    font-family: 'UndertaleFont', sans-serif;
+}
+
+.undertale-bold{
+    font-family: 'UndertaleBoldFont', sans-serif;
+
+}
