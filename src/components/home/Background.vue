@@ -1,5 +1,4 @@
 <template>
-    <div class="w-[100vw] h-[80vh]">
         <TresCanvas ref="canvasRef" clear-color='#9be8ff'>
             <TresPerspectiveCamera ref="cameraRef" :position="[-7, 10, 0]" :look-at="[5, 5, 0]" />
             <TresGroup ref="groupRef" :position="[5, 1, 0]">
@@ -12,7 +11,6 @@
             <TresBoxGeometry :args="[1.5, 1.5, 1.5]" />
             <TresDirectionalLight color="#fffeb5" :position="[1, 1, 0]" :intensity="5" />
         </TresCanvas>
-    </div>
 </template>
 <script setup lang="ts">
 import { shallowRef } from 'vue';

@@ -17,17 +17,19 @@
             </div>
         </div>
     </div>
-    <Background :isDay="isDay"/>
+    <div class="w-[100vw] min-h-[80vh]">
+        <!-- <Background :isDay="isDay"/> -->
+    </div>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import Background from './Background.vue';
+// import Background from './Background.vue';
 export default defineComponent({
     name: "TimeBanner",
     setup() {
         const date = ref<string>(new Date().toLocaleDateString());
         const time = ref<string>(new Date().toLocaleTimeString());
-            const isDay = ref<boolean>(false);
+        const isDay = ref<boolean>(false);
         return {
             date,
             time,
@@ -35,7 +37,7 @@ export default defineComponent({
         }
     },
     components: {
-        Background
+        // Background
     },
     created() {
         setInterval(() => {
@@ -49,7 +51,7 @@ export default defineComponent({
             this.time = date.toLocaleTimeString()
             this.isDay = date.getHours() < 18
         },
-        setDayNight(){
+        setDayNight() {
             this.isDay = !this.isDay
             console.log(this.isDay)
         }

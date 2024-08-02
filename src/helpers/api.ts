@@ -50,7 +50,6 @@ class API {
 
     authorize = (token: string) => {
         this.authorization = token
-        console.log(this.authorization)
     }
 
     unauthorize = () => this.authorization = ''
